@@ -21,16 +21,16 @@ script = ExtResource("2_m4g7s")
 
 [node name="Button" type="Button" parent="." unique_id=961974152]
 layout_mode = 1
-anchors_preset = 7
-anchor_left = 0.5
+anchors_preset = 3
+anchor_left = 1.0
 anchor_top = 1.0
-anchor_right = 0.5
+anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 465.0
-offset_top = -179.0
-offset_right = 634.0
-offset_bottom = -39.0
-grow_horizontal = 2
+offset_left = -224.5
+offset_top = -164.0
+offset_right = -79.5
+offset_bottom = -45.0
+grow_horizontal = 0
 grow_vertical = 0
 size_flags_horizontal = 4
 size_flags_vertical = 8
