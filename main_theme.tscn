@@ -2,16 +2,22 @@
 
 [ext_resource type="Texture2D" uid="uid://b6my0agjab25g" path="res://assests/TelaIniciak.jpeg" id="1_pufxi"]
 [ext_resource type="Texture2D" uid="uid://lw6iahdvp8u3" path="res://assests/Logo.jpeg" id="2_a30gs"]
+[ext_resource type="Script" uid="uid://c6retbi7ukg01" path="res://main_theme.gd" id="2_m4g7s"]
 
 [node name="MainTheme" type="TextureRect" unique_id=2065460698]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = -63.0
+offset_top = -24.0
+offset_right = 64.0
+offset_bottom = 24.0
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 texture = ExtResource("1_pufxi")
+script = ExtResource("2_m4g7s")
 
 [node name="Button" type="Button" parent="." unique_id=961974152]
 layout_mode = 1
@@ -33,4 +39,17 @@ button_mask = 0
 icon = ExtResource("2_a30gs")
 expand_icon = true
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=711989215]
+[node name="StartGame" type="Button" parent="." unique_id=1034710691]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.35900003
+anchor_top = 0.61800003
+anchor_right = 0.64500004
+anchor_bottom = 0.72700006
+offset_left = -0.11303711
+offset_top = 0.37597656
+offset_right = -0.5150757
+offset_bottom = -0.33605957
+
+[connection signal="pressed" from="StartGame" to="." method="_on_start_game_pressed"]
+[connection signal="pressed" from="StartGame" to="StartGame" method="_on_pressed"]
